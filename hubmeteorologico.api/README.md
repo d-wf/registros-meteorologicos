@@ -94,5 +94,5 @@ Na api foi feito da seguinte forma para não elevar a complexidade e tempo desen
 
 ## Observações
 
-- Credenciais devem ser preenchidas para obter o token, porém usuario e senha não são validados.
+- Credenciais devem ser preenchidas para obter o token, porém usuario e senha não são validados via banco.
 - ClientId e ClientSecret válidos estão definidos no .env

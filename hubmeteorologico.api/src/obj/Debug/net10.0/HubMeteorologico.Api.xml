@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HubMeteorologico.Api</name>
+    </assembly>
+    <members>
+        <member name="T:HubMeteorologico.Api.Config.AppConfig">
+             <summary>
+             Classe com todos os parâmetros da aplicação
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Database__ConnectionString=#string#
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.AppConfig.Auth">
+            <summary>
+            Configuração de authorization
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.AuthConfig.Issuer">
+             <summary>
+             Issuer é o originador do JWT
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Issuer=#string#
+            
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.AuthConfig.Audience">
+             <summary>
+             Audience é o público do JWT
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Audience=#string#
+            
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.AuthConfig.Key">
+             <summary>
+             Key é a chave para assinar/validar integridade do JWT
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Key=#string#
+            
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.AuthConfig.Clients">
+             <summary>
+             Lista de Clients
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Clients=#string#
+            
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.AuthConfig.Scopes">
+            <summary>
+            Lista de scopes
+            </summary>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.AuthConfig.Policies">
+             <summary>
+             Nome da policy
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Policies__1__Policy=#string#
+            
+             </remark>
+             <summary>
+             Lista de politicas
+             </summary>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.ClientConfig.ClientId">
+             <summary>
+             Client Id utilizado para autorização
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__ClientId=#string#
+            
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.ClientConfig.ClientSecret">
+             <summary>
+             Client Secret utilizado para autorização
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__ClientSecret=#string#
+            
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.ScopesConfig.Name">
+             <summary>
+             Nome dos scopes
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Scopes__0__Name=#string#
+            
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.ScopesConfig.Display">
+             <summary>
+             Descrição dos scopes
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Scopes__0__Display=#string#
+             </remark>
+        </member>
+        <member name="P:HubMeteorologico.Api.Config.PoliciesConfig.Scope">
+             <summary>
+             Definição dos scopes que irão ser validados
+             </summary>
+             <remark>
+             Estrutura em variáveis de ambiente:
+            
+             App__Auth__Policies__1__Scope__0=#string#
+             </remark>
+        </member>
+        <member name="T:HubMeteorologico.Api.Config.IAuthConfig">
+            <summary>
+            IAuthConfig
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.EquipamentosController.Get(System.Int32)">
+            <summary>
+            Lista equipamentos
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.EquipamentosController.GetEstacoes(System.Int32)">
+            <summary>
+            Lista Estações Meteorológicas
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.EquipamentosController.GetPluviometros(System.Int32)">
+            <summary>
+            Lista Pluviômetros
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.EquipamentosController.GetEstacao(System.Int32)">
+            <summary>
+            Obtém os dados de uma Estação Meteorológica por ID.
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.EquipamentosController.GetPluviometro(System.Int32)">
+            <summary>
+            Obtém os dados de um Pluviômetro por ID.
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.EquipamentosController.AtualizarEstacao(System.Int32,HubMeteorologico.Api.Models.EquipamentoEstacaoUpdateRequest)">
+            <summary>
+            Atualiza dados de um equipamento Estação Meteorológica
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.EquipamentosController.AtualizarPluviometro(System.Int32,HubMeteorologico.Api.Models.EquipamentoPluviometroUpdateRequest)">
+            <summary>
+            Atualiza dados de um equipamento Pluviômetro.
+            </summary>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.RegistrosInterpoladosController.GetRegistrosInterpolados(System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            Este recurso tem o objetivo retornar a lista de registros interpolados.
+            </summary>
+            <param name="fazenda">ID da Fazenda</param>
+            <param name="lavoura">ID da Lavoura</param>
+            <param name="dataHora">Data e hora do registro</param>
+        </member>
+        <member name="M:HubMeteorologico.Api.Controllers.RegistrosMeteorologicosController.AtualizarRegistros(System.Int32,System.DateTime)">
+            <summary>
+            Consulta e persiste registros meteorológico da API externa e persiste o resultado.
+            </summary>
+            <param name="equipamento">ID do Equipamento</param>
+            <param name="dataHora">Data e hora da medição</param>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

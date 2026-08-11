@@ -69,7 +69,7 @@ Na api foi feito da seguinte forma para não elevar a complexidade e tempo desen
 
 # Hub Meteorológico API
 
-- API em .NET 10.0 Hub Meteorológico
+- API em .NET - Hub Meteorológico
 
 ## Estrutura
 
